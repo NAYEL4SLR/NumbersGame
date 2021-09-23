@@ -127,7 +127,6 @@ namespace NumbersGame
                 list.Add(ran.Next(0, value + 1));
             }
             Play(trials, list);
-            Console.ReadLine();
         }
         static void Play(int trials, int num)
         {
@@ -141,6 +140,7 @@ namespace NumbersGame
                     Thread.Sleep(3200);
                     Console.Clear();
                     Console.WriteLine("\n\n\n\n\n\t\t\t\t* GAME OVER *");
+                    Console.ReadKey();
                     return;
                 }
                 Console.Write("\n\tDin gissning:  ");
@@ -197,6 +197,7 @@ namespace NumbersGame
                     Thread.Sleep(3200);
                     Console.Clear();
                     Console.WriteLine("\n\n\n\n\n\t\t\t\t* GAME OVER *");
+                    Console.ReadKey();
                     return;
                 }
                 Console.Write("\n\tDin gissning:  ");
@@ -251,7 +252,7 @@ namespace NumbersGame
                 if (!input)
                     continue;
                 trials--;
-            }
+            }           
         }
         
         
